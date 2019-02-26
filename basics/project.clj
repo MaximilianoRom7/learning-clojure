@@ -8,7 +8,7 @@
                  [ring "1.7.1"]
                  [compojure "1.6.1"]
                  [hiccup "2.0.0-alpha2"]]
-  :ring {:handler basics.core/routes
+  :ring {:handler basics.core/app-routes
          :auto-reload? true
          :auto-refresh? true}
   :main ^:skip-aot basics.core

@@ -4,6 +4,6 @@
             [basics.views :as views])
   (:gen-class))
 
-(defroutes routes
+(defroutes app-routes
   (GET "/" [] (views/page-index))
   (route/resources "/"))
