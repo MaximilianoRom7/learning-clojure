@@ -5,7 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :plugins [[lein-ring "0.12.5"]]
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [ring "1.7.1"]]
+                 [ring "1.7.1"]
+                 [compojure "1.6.1"]]
   :ring {:handler basics.core/my_routes
          :auto-reload? true
          :auto-refresh? false}
