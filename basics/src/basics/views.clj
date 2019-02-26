@@ -5,17 +5,18 @@
 (defn style-inline [s]
   (str/join ";" (map #(str (name %) ":" ((keyword %) s)) (keys s))))
 
-
+(defn style [s]
+  (str ".div1 {" (style-inline s) "}"))
 
 (defn page-index []
   (html5
    [:html
     [:head
-     [:style]]
+     [:style (style {:padding            "20px"
+                     :background-color   "red"
+                     :color              "black"
+                     :font-size          "large"
+                     :font-weight        "bold"})]]
     [:body
-     [:div {:style (style-inline {:padding            "20px"
-                                  :background-color   "red"
-                                  :color              "black"
-                                  :font-size          "large"
-                                  :font-weight        "bold"})}
+     [:div {:class "div1"}
       [:p "Hello World !"]]]]))
