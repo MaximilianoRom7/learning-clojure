@@ -8,9 +8,9 @@
                  [ring "1.7.1"]
                  [compojure "1.6.1"]
                  [hiccup "2.0.0-alpha2"]]
-  :ring {:handler basics.core/my_routes
+  :ring {:handler basics.core/routes
          :auto-reload? true
-         :auto-refresh? false}
+         :auto-refresh? true}
   :main ^:skip-aot basics.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
