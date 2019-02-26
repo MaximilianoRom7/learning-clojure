@@ -1,7 +1,7 @@
 # learning-clojure
 This is a diary of the practices I have done to learn Clojure
 
-## TODO
+### TODO
 * Keep reading korma doc http://sqlkorma.com/docs
 * Complete the orm/clients app using the korma ORM clojure package
 
