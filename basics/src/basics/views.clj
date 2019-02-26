@@ -9,4 +9,4 @@
      (include-css "css/index.css")]
     [:body
      [:div {:class "red-box"}
-      [:p "Hello World !"]]]]))
+      [:h3 "Hello World !"]]]]))
