@@ -1,0 +1,7 @@
+* {
+    margin: 0;
+}
+.red-box {
+    padding: 20px;
+    background-color: red;
+}
