@@ -5,7 +5,7 @@
 (defdb pg (postgres
            {:host "localhost"
             :port "5432"
-            :db "clojure-clients"
+            :db "clojureClients"
             :user "postgres"
             :delimiters ""}))
 
